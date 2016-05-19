@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RootScope</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="newApp">
+   
+    <div class="Show-scope-demo">
+        <div ng-controller="myContainer">
+            Hello{{name}}!
+        </div>
+        <div ng-controller="listController">
+            <ol>
+				<li ng-repeat="name in names">
+				    {{name}} from {{department}}
+                </li>
+            </ol>
+        </div>
+    </div>
+    	   
+    <script src="js/angular.1.5.7.js"></script>
+    <script src="js/app.js"></script>     
+</body>
+</html>

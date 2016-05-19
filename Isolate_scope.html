@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <div class="mainContainer" ng-app="isolateApp">
+       <div ng-controller="AppCtrl" class="container-fluid">
+           <div class="row">
+              <h1>My Employee</h1>
+               <employee name="Rohit Agarwal"
+                  image="css/media/img1.png"
+                  movetype="movetype"
+                  use-move="getMove(name, movetype, move)"
+                  class="col-xs-3"></employee>
+               <employee name="Anup Soni"
+                  image="css/media/img2.png"
+                  movetype="movetype"
+                  use-move="getMove(name, movetype, move)"
+                  class="col-xs-3"></employee>
+               <employee name="Rahul Ranjan"
+                  image="css/media/img3.png"
+                  movetype="movetype"
+                  use-move="getMove(name, movetype, move)"
+                  class="col-xs-3"></employee>
+               <employee name="Swetta Tiwari"
+                  image="css/media/img4.png"
+                  movetype="movetype"
+                  use-move="getMove(name, movetype, move)"
+                  class="col-xs-3"></employee>
+        
+           </div>
+       </div>
+   </div>
+<script src="js/angular.1.5.7.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
