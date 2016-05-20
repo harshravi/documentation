@@ -22,3 +22,8 @@ h1 {
     color: darkgreen;
     font-family: cursive;
 }
+
+.bd-content.ng-scope {
+    width: 400px;
+    margin: 0 auto;
+}

@@ -56,3 +56,15 @@ var newApp = angular.module('newApp',[]);
 				}
 			
 			]);
+
+
+
+
+// fetching data from json
+var app = angular.module('myapp', []);
+app.controller('myNewController', function($scope, $http) {
+    $http.get('../js/data.json')
+       .then(function(res){
+          $scope.people = res.data;                
+        });
+});
